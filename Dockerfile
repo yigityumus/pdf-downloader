@@ -10,5 +10,8 @@ COPY . .
 # Install dependencies from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Provide volume for downloaded pdf files
+VOLUME /app/pdf_files
+
 # Run main.py when the container launches
 CMD ["python", "main.py"]

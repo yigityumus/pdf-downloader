@@ -18,7 +18,7 @@ To use the PDF Downloader:
 
 - Ensure Docker is installed on your system.
 - Build the Docker image using the command: `docker build -t pdf_downloader .`
-- Run the Docker container: `docker run pdf_downloader`
+- Run the Docker container: `docker run -v $(pwd)/pdf_files:/app/pdf_files pdf_downloader`
 
 ### Method 2: Without Docker
 
